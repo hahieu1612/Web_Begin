@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="blog_wedModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id_account" />
+          </Key>
+          <Property Name="id_account" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="20" />
+          <Property Name="phone_number" Type="int" />
+          <Property Name="rule" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="comment">
+          <Key>
+            <PropertyRef Name="id_comment" />
+          </Key>
+          <Property Name="id_comment" Type="int" Nullable="false" />
+          <Property Name="content_cmt" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="id_account" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idea" Type="int" Nullable="false" />
+          <Property Name="time" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ideas">
+          <Key>
+            <PropertyRef Name="id_ideas" />
+          </Key>
+          <Property Name="id_ideas" Type="int" Nullable="false" />
+          <Property Name="id_topic" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_account" Type="int" Nullable="false" />
+          <Property Name="thumb_up" Type="int" Nullable="false" />
+          <Property Name="thumb_down" Type="int" Nullable="false" />
+          <Property Name="views" Type="int" Nullable="false" />
+          <Property Name="ideas_date" Type="datetime" Nullable="false" />
+          <Property Name="Content" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="time" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="reaction">
+          <Key>
+            <PropertyRef Name="reaction_id" />
+          </Key>
+          <Property Name="reaction_id" Type="int" Nullable="false" />
+          <Property Name="id_idea" Type="int" Nullable="false" />
+          <Property Name="id_account" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="topic">
+          <Key>
+            <PropertyRef Name="id_toppic" />
+          </Key>
+          <Property Name="id_toppic" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_topic" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_comment_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ideas_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="ideas" Type="Self.ideas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="ideas">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ideas_topic">
+          <End Role="topic" Type="Self.topic" Multiplicity="1" />
+          <End Role="ideas" Type="Self.ideas" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="topic">
+              <PropertyRef Name="id_toppic" />
+            </Principal>
+            <Dependent Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_reaction_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="reaction" Type="Self.reaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="reaction">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_reaction_ideas">
+          <End Role="ideas" Type="Self.ideas" Multiplicity="1" />
+          <End Role="reaction" Type="Self.reaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Principal>
+            <Dependent Role="reaction">
+              <PropertyRef Name="id_idea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="blog_wedModelStoreContainer">
+          <EntitySet Name="account" EntityType="Self.account" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="comment" EntityType="Self.comment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ideas" EntityType="Self.ideas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="reaction" EntityType="Self.reaction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="topic" EntityType="Self.topic" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_comment_account" Association="Self.FK_comment_account">
+            <End Role="account" EntitySet="account" />
+            <End Role="comment" EntitySet="comment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ideas_account" Association="Self.FK_ideas_account">
+            <End Role="account" EntitySet="account" />
+            <End Role="ideas" EntitySet="ideas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ideas_topic" Association="Self.FK_ideas_topic">
+            <End Role="topic" EntitySet="topic" />
+            <End Role="ideas" EntitySet="ideas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_reaction_account" Association="Self.FK_reaction_account">
+            <End Role="account" EntitySet="account" />
+            <End Role="reaction" EntitySet="reaction" />
+          </AssociationSet>
+          <AssociationSet Name="FK_reaction_ideas" Association="Self.FK_reaction_ideas">
+            <End Role="ideas" EntitySet="ideas" />
+            <End Role="reaction" EntitySet="reaction" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="blog_wedModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="id_account" />
+          </Key>
+          <Property Name="id_account" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="phone_number" Type="Int32" />
+          <Property Name="rule" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="comments" Relationship="Self.FK_comment_account" FromRole="account" ToRole="comment" />
+          <NavigationProperty Name="ideas" Relationship="Self.FK_ideas_account" FromRole="account" ToRole="ideas" />
+          <NavigationProperty Name="reactions" Relationship="Self.FK_reaction_account" FromRole="account" ToRole="reaction" />
+        </EntityType>
+        <EntityType Name="comment">
+          <Key>
+            <PropertyRef Name="id_comment" />
+          </Key>
+          <Property Name="id_comment" Type="Int32" Nullable="false" />
+          <Property Name="content_cmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="id_account" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idea" Type="Int32" Nullable="false" />
+          <Property Name="time" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="account" Relationship="Self.FK_comment_account" FromRole="comment" ToRole="account" />
+        </EntityType>
+        <EntityType Name="idea">
+          <Key>
+            <PropertyRef Name="id_ideas" />
+          </Key>
+          <Property Name="id_ideas" Type="Int32" Nullable="false" />
+          <Property Name="id_topic" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_account" Type="Int32" Nullable="false" />
+          <Property Name="thumb_up" Type="Int32" Nullable="false" />
+          <Property Name="thumb_down" Type="Int32" Nullable="false" />
+          <Property Name="views" Type="Int32" Nullable="false" />
+          <Property Name="ideas_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="account" Relationship="Self.FK_ideas_account" FromRole="ideas" ToRole="account" />
+          <NavigationProperty Name="topic" Relationship="Self.FK_ideas_topic" FromRole="ideas" ToRole="topic" />
+          <NavigationProperty Name="reactions" Relationship="Self.FK_reaction_ideas" FromRole="ideas" ToRole="reaction" />
+        </EntityType>
+        <EntityType Name="reaction">
+          <Key>
+            <PropertyRef Name="reaction_id" />
+          </Key>
+          <Property Name="reaction_id" Type="Int32" Nullable="false" />
+          <Property Name="id_idea" Type="Int32" Nullable="false" />
+          <Property Name="id_account" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="account" Relationship="Self.FK_reaction_account" FromRole="reaction" ToRole="account" />
+          <NavigationProperty Name="idea" Relationship="Self.FK_reaction_ideas" FromRole="reaction" ToRole="ideas" />
+        </EntityType>
+        <EntityType Name="topic">
+          <Key>
+            <PropertyRef Name="id_toppic" />
+          </Key>
+          <Property Name="id_toppic" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_topic" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="idea" Relationship="Self.FK_ideas_topic" FromRole="topic" ToRole="ideas" />
+        </EntityType>
+        <Association Name="FK_comment_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ideas_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="ideas" Type="Self.idea" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="ideas">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_reaction_account">
+          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="reaction" Type="Self.reaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="account">
+              <PropertyRef Name="id_account" />
+            </Principal>
+            <Dependent Role="reaction">
+              <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ideas_topic">
+          <End Role="topic" Type="Self.topic" Multiplicity="1" />
+          <End Role="ideas" Type="Self.idea" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="topic">
+              <PropertyRef Name="id_toppic" />
+            </Principal>
+            <Dependent Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_reaction_ideas">
+          <End Role="ideas" Type="Self.idea" Multiplicity="1" />
+          <End Role="reaction" Type="Self.reaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Principal>
+            <Dependent Role="reaction">
+              <PropertyRef Name="id_idea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="blog_wedEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="accounts" EntityType="Self.account" />
+          <EntitySet Name="comments" EntityType="Self.comment" />
+          <EntitySet Name="ideas" EntityType="Self.idea" />
+          <EntitySet Name="reactions" EntityType="Self.reaction" />
+          <EntitySet Name="topics" EntityType="Self.topic" />
+          <AssociationSet Name="FK_comment_account" Association="Self.FK_comment_account">
+            <End Role="account" EntitySet="accounts" />
+            <End Role="comment" EntitySet="comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ideas_account" Association="Self.FK_ideas_account">
+            <End Role="account" EntitySet="accounts" />
+            <End Role="ideas" EntitySet="ideas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_reaction_account" Association="Self.FK_reaction_account">
+            <End Role="account" EntitySet="accounts" />
+            <End Role="reaction" EntitySet="reactions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ideas_topic" Association="Self.FK_ideas_topic">
+            <End Role="topic" EntitySet="topics" />
+            <End Role="ideas" EntitySet="ideas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_reaction_ideas" Association="Self.FK_reaction_ideas">
+            <End Role="ideas" EntitySet="ideas" />
+            <End Role="reaction" EntitySet="reactions" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="blog_wedModelStoreContainer" CdmEntityContainer="blog_wedEntities">
+          <EntitySetMapping Name="accounts">
+            <EntityTypeMapping TypeName="blog_wedModel.account">
+              <MappingFragment StoreEntitySet="account">
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+                <ScalarProperty Name="rule" ColumnName="rule" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="comments">
+            <EntityTypeMapping TypeName="blog_wedModel.comment">
+              <MappingFragment StoreEntitySet="comment">
+                <ScalarProperty Name="id_comment" ColumnName="id_comment" />
+                <ScalarProperty Name="content_cmt" ColumnName="content_cmt" />
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+                <ScalarProperty Name="idea" ColumnName="idea" />
+                <ScalarProperty Name="time" ColumnName="time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ideas">
+            <EntityTypeMapping TypeName="blog_wedModel.idea">
+              <MappingFragment StoreEntitySet="ideas">
+                <ScalarProperty Name="id_ideas" ColumnName="id_ideas" />
+                <ScalarProperty Name="id_topic" ColumnName="id_topic" />
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+                <ScalarProperty Name="thumb_up" ColumnName="thumb_up" />
+                <ScalarProperty Name="thumb_down" ColumnName="thumb_down" />
+                <ScalarProperty Name="views" ColumnName="views" />
+                <ScalarProperty Name="ideas_date" ColumnName="ideas_date" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="time" ColumnName="time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="reactions">
+            <EntityTypeMapping TypeName="blog_wedModel.reaction">
+              <MappingFragment StoreEntitySet="reaction">
+                <ScalarProperty Name="reaction_id" ColumnName="reaction_id" />
+                <ScalarProperty Name="id_idea" ColumnName="id_idea" />
+                <ScalarProperty Name="id_account" ColumnName="id_account" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="topics">
+            <EntityTypeMapping TypeName="blog_wedModel.topic">
+              <MappingFragment StoreEntitySet="topic">
+                <ScalarProperty Name="id_toppic" ColumnName="id_toppic" />
+                <ScalarProperty Name="name_topic" ColumnName="name_topic" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
