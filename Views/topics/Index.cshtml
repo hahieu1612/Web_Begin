@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ASM.Models.topic>
+﻿@model IEnumerable<ASM.Model.topic>
 
 @{
     ViewBag.Title = "Index";
@@ -15,9 +15,6 @@
         <th>
             @Html.DisplayNameFor(model => model.name_topic)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.idea.Content)
-        </th>
         <th></th>
     </tr>
 
@@ -25,9 +22,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.name_topic)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.idea.Content)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.id_toppic }) |

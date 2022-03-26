@@ -6,19 +6,18 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ASM.Models;
+using ASM.Model;
 
 namespace ASM.Controllers
 {
     public class topicsController : Controller
     {
-        private blog_wedEntities db = new blog_wedEntities();
+        private blog_wedEntities1 db = new blog_wedEntities1();
 
         // GET: topics
         public ActionResult Index()
         {
-            var topics = db.topics.Include(t => t.idea);
-            return View(topics.ToList());
+            return View(db.topics.ToList());
         }
 
         // GET: topics/Details/5
@@ -39,7 +38,6 @@ namespace ASM.Controllers
         // GET: topics/Create
         public ActionResult Create()
         {
-            ViewBag.id_toppic = new SelectList(db.ideas, "id_ideas", "Content");
             return View();
         }
 
@@ -57,7 +55,6 @@ namespace ASM.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.id_toppic = new SelectList(db.ideas, "id_ideas", "Content", topic.id_toppic);
             return View(topic);
         }
 
@@ -73,7 +70,6 @@ namespace ASM.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.id_toppic = new SelectList(db.ideas, "id_ideas", "Content", topic.id_toppic);
             return View(topic);
         }
 
@@ -90,7 +86,6 @@ namespace ASM.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.id_toppic = new SelectList(db.ideas, "id_ideas", "Content", topic.id_toppic);
             return View(topic);
         }
 

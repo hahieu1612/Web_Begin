@@ -6,13 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ASM.Models;
+using ASM.Model;
 
 namespace ASM.Controllers
 {
     public class ideasController : Controller
     {
-        private blog_wedEntities db = new blog_wedEntities();
+        private blog_wedEntities1 db = new blog_wedEntities1();
 
         // GET: ideas
         public ActionResult Index()
@@ -40,7 +40,7 @@ namespace ASM.Controllers
         public ActionResult Create()
         {
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
-            ViewBag.id_ideas = new SelectList(db.topics, "id_toppic", "name_topic");
+            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_topic,id_account,thumb_up,thumb_down,views,ideas_date,Content,time")] idea idea)
+        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic")] idea idea)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace ASM.Controllers
             }
 
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_ideas = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_ideas);
+            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
             return View(idea);
         }
 
@@ -76,7 +76,7 @@ namespace ASM.Controllers
                 return HttpNotFound();
             }
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_ideas = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_ideas);
+            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
             return View(idea);
         }
 
@@ -85,7 +85,7 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_ideas,id_topic,id_account,thumb_up,thumb_down,views,ideas_date,Content,time")] idea idea)
+        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic")] idea idea)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace ASM.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_ideas = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_ideas);
+            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
             return View(idea);
         }
 

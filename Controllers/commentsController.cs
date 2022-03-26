@@ -6,13 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ASM.Models;
+using ASM.Model;
 
 namespace ASM.Controllers
 {
     public class commentsController : Controller
     {
-        private blog_wedEntities db = new blog_wedEntities();
+        private blog_wedEntities1 db = new blog_wedEntities1();
 
         // GET: comments
         public ActionResult Index()
