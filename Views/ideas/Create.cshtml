@@ -8,7 +8,7 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm(null,null, System.Web.Mvc.FormMethod.Post ,new {enctype ="mutipart/form-data"})) 
 {
     @Html.AntiForgeryToken()
     
@@ -51,7 +51,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ideas_date, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ideas_date, new { htmlAttributes = new { @class = "form-control" } })
+                 <input  type="datetime-local" id=" upload" name="upload"/>
                 @Html.ValidationMessageFor(model => model.ideas_date, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -69,6 +69,14 @@
             <div class="col-md-10">
                 @Html.DropDownList("id_toppic", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.id_toppic, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.file, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               <input  type="file" id=" upload" name="upload"/>
+                @Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })
             </div>
         </div>
 

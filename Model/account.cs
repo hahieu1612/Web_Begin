@@ -27,7 +27,7 @@ namespace ASM.Model
         public string email { get; set; }
         public string password { get; set; }
         public Nullable<int> phone_number { get; set; }
-        public int rule { get; set; }
+        public Nullable<int> rule { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<comment> comments { get; set; }

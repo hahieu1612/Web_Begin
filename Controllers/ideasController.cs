@@ -49,13 +49,21 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic")] idea idea)
+        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file")] idea idea )
         {
+            
+            
+
+
             if (ModelState.IsValid)
             {
-                db.ideas.Add(idea);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+               
+                    
+                    db.ideas.Add(idea);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                
+               
             }
 
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
@@ -85,7 +93,7 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic")] idea idea)
+        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file")] idea idea)
         {
             if (ModelState.IsValid)
             {

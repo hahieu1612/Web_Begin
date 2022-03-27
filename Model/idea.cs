@@ -21,13 +21,14 @@ namespace ASM.Model
         }
     
         public int id_ideas { get; set; }
-        public int id_account { get; set; }
-        public int thumb_up { get; set; }
-        public int thumb_down { get; set; }
-        public int views { get; set; }
-        public System.DateTime ideas_date { get; set; }
+        public Nullable<int> id_account { get; set; }
+        public Nullable<int> thumb_up { get; set; }
+        public Nullable<int> thumb_down { get; set; }
+        public Nullable<int> views { get; set; }
+        public Nullable<System.DateTime> ideas_date { get; set; }
         public string Content { get; set; }
         public Nullable<int> id_toppic { get; set; }
+        public byte[] file { get; set; }
     
         public virtual account account { get; set; }
         public virtual topic topic { get; set; }
