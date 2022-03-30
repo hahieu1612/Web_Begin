@@ -1,0 +1,76 @@
+﻿@model IEnumerable<ASM.Model.idea>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.thumb_up)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.thumb_down)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.views)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ideas_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.file)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.account.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.topic.name_topic)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.thumb_up)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.thumb_down)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.views)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ideas_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.file)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.account.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.topic.name_topic)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_ideas }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_ideas }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_ideas })
+        </td>
+    </tr>
+}
+
+</table>

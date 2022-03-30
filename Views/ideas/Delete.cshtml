@@ -1,0 +1,89 @@
+﻿@model ASM.Model.idea
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>idea</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.thumb_up)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thumb_up)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thumb_down)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thumb_down)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.views)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.views)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ideas_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ideas_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.file)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.file)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.account.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.account.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.topic.name_topic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.topic.name_topic)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

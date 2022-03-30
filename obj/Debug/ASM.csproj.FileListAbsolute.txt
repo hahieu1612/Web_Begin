@@ -1,0 +1,497 @@
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\ASM.dll.config
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\ASM.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\ASM.pdb
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\WebGrease.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\obj\Debug\ASM.csproj.CopyComplete
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\obj\Debug\ASM.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\obj\Debug\ASM.pdb
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\ASM2(1670)\ASM\obj\Debug\ASM.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\ASM.dll.config
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\ASM.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\ASM.pdb
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\WebGrease.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CopyComplete
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\obj\Debug\ASM.dll
+C:\Users\DELL\Desktop\BackUp\ASM2(1670) 20-12\ASM\obj\Debug\ASM.pdb
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\ASM.dll.config
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\ASM.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\ASM.pdb
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\WebGrease.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CopyComplete
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\obj\Debug\ASM.dll
+C:\Users\DELL\Desktop\BackUp\21-12\ASM2(1670) 20-12\ASM\obj\Debug\ASM.pdb
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\ASM.dll.config
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\ASM.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\ASM.pdb
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csc.exe.config
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csc.rsp
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csi.exe.config
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\csi.rsp
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Console.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\vbc.rsp
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\EntityFramework.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\WebGrease.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\EntityFramework.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Helpers.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Mvc.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Optimization.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.Razor.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\obj\Debug\ASM.csproj.CopyComplete
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\obj\Debug\ASM.dll
+C:\Users\DELL\Desktop\ASM2\ASM2(1670) 20-12\ASM\obj\Debug\ASM.pdb
+C:\Users\DELL\Downloads\ASM\ASM\bin\ASM.dll.config
+C:\Users\DELL\Downloads\ASM\ASM\bin\ASM.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\ASM.pdb
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csc.exe
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csc.exe.config
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csc.rsp
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csi.exe
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csi.exe.config
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\csi.rsp
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Console.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Net.Http.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Net.Sockets.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\vbc.exe
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\vbc.rsp
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Downloads\ASM\ASM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Downloads\ASM\ASM\bin\Antlr3.Runtime.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\EntityFramework.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\Newtonsoft.Json.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Helpers.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Mvc.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Optimization.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Razor.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.Razor.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\WebGrease.dll
+C:\Users\DELL\Downloads\ASM\ASM\bin\EntityFramework.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Helpers.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Mvc.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Optimization.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.Razor.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\System.Web.WebPages.Razor.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\Newtonsoft.Json.xml
+C:\Users\DELL\Downloads\ASM\ASM\bin\Antlr3.Runtime.pdb
+C:\Users\DELL\Downloads\ASM\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Downloads\ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\ASM\ASM\obj\Debug\ASM.csproj.CopyComplete
+C:\Users\DELL\Downloads\ASM\ASM\obj\Debug\ASM.dll
+C:\Users\DELL\Downloads\ASM\ASM\obj\Debug\ASM.pdb
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\ASM.dll.config
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\ASM.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\ASM.pdb
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csc.exe
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csc.exe.config
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csc.rsp
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csi.exe
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csi.exe.config
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\csi.rsp
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.AppContext.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Collections.Immutable.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Console.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Globalization.Calendars.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.IO.Compression.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.IO.FileSystem.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Net.Http.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Net.Sockets.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Reflection.Metadata.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.ValueTuple.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Xml.XPath.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\vbc.exe
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\vbc.exe.config
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\vbc.rsp
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\VBCSCompiler.exe
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\roslyn\VBCSCompiler.exe.config
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Antlr3.Runtime.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\EntityFramework.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\EntityFramework.SqlServer.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Microsoft.Web.Infrastructure.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Newtonsoft.Json.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Helpers.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Mvc.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Optimization.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Razor.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.Deployment.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.Razor.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\WebGrease.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\EntityFramework.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\EntityFramework.SqlServer.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Helpers.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Mvc.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Optimization.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.Razor.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.Deployment.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\System.Web.WebPages.Razor.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Newtonsoft.Json.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Antlr3.Runtime.pdb
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\obj\Debug\ASM.csproj.CopyComplete
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\obj\Debug\ASM.dll
+D:\TOPUP\Enterprise Web Software Development(COMP1640)\ASM\BlogWeb\ASM\obj\Debug\ASM.pdb
