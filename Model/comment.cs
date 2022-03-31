@@ -21,5 +21,6 @@ namespace ASM.Model
         public Nullable<System.DateTime> time { get; set; }
     
         public virtual account account { get; set; }
+        public virtual idea idea1 { get; set; }
     }
 }

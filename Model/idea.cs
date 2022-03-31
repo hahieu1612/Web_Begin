@@ -17,6 +17,7 @@ namespace ASM.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public idea()
         {
+            this.comments = new HashSet<comment>();
             this.reactions = new HashSet<reaction>();
         }
     
@@ -25,12 +26,15 @@ namespace ASM.Model
         public Nullable<int> thumb_up { get; set; }
         public Nullable<int> thumb_down { get; set; }
         public Nullable<int> views { get; set; }
-        public Nullable<System.DateTime> ideas_date { get; set; }
+        public System.DateTime ideas_date { get; set; }
         public string Content { get; set; }
         public Nullable<int> id_toppic { get; set; }
         public byte[] file { get; set; }
+        public byte[] img { get; set; }
     
         public virtual account account { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<comment> comments { get; set; }
         public virtual topic topic { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<reaction> reactions { get; set; }

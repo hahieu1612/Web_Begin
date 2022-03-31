@@ -4,15 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2140726fc0e44e2690586e4d51481802" Name="Diagram1">
-        <EntityTypeShape EntityType="blog_wedModel.account" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="blog_wedModel.comment" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="blog_wedModel.idea" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="blog_wedModel.reaction" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+      <Diagram DiagramId="0eed1c1994ad43c4813e9a02b2f437e5" Name="Diagram1">
+        <EntityTypeShape EntityType="blog_wedModel.account" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="blog_wedModel.comment" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="blog_wedModel.idea" Width="1.5" PointX="6" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="blog_wedModel.reaction" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="blog_wedModel.topic" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="blog_wedModel.FK_comment_account" ManuallyRouted="false" />
         <AssociationConnector Association="blog_wedModel.FK_ideas_account" ManuallyRouted="false" />
         <AssociationConnector Association="blog_wedModel.FK_reaction_account" ManuallyRouted="false" />
+        <AssociationConnector Association="blog_wedModel.FK_comment_ideas" ManuallyRouted="false" />
         <AssociationConnector Association="blog_wedModel.FK_ideas_topic" ManuallyRouted="false" />
         <AssociationConnector Association="blog_wedModel.FK_reaction_ideas" ManuallyRouted="false" />
       </Diagram>

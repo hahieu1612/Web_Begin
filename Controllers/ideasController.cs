@@ -12,7 +12,7 @@ namespace ASM.Controllers
 {
     public class ideasController : Controller
     {
-        private blog_wedEntities1 db = new blog_wedEntities1();
+        private blog_wed_Entities db = new blog_wed_Entities();
 
         // GET: ideas
         public ActionResult Index()
@@ -49,21 +49,13 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file")] idea idea )
+        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
         {
-            
-            
-
-
             if (ModelState.IsValid)
             {
-               
-                    
-                    db.ideas.Add(idea);
-                    db.SaveChanges();
-                    return RedirectToAction("Index");
-                
-               
+                db.ideas.Add(idea);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
 
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
@@ -93,10 +85,11 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file")] idea idea)
+        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
         {
             if (ModelState.IsValid)
             {
+                 
                 db.Entry(idea).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

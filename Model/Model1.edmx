@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="blog_wedModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="blog_wedModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="account">
           <Key>
             <PropertyRef Name="id_account" />
@@ -35,10 +35,11 @@
           <Property Name="thumb_up" Type="int" />
           <Property Name="thumb_down" Type="int" />
           <Property Name="views" Type="int" />
-          <Property Name="ideas_date" Type="datetime" />
-          <Property Name="Content" Type="nvarchar" MaxLength="50" />
+          <Property Name="ideas_date" Type="datetime" Nullable="false" />
+          <Property Name="Content" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="id_toppic" Type="int" />
           <Property Name="file" Type="varbinary(max)" />
+          <Property Name="img" Type="image" />
         </EntityType>
         <EntityType Name="reaction">
           <Key>
@@ -64,6 +65,18 @@
             </Principal>
             <Dependent Role="comment">
               <PropertyRef Name="id_account" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_comment_ideas">
+          <End Role="ideas" Type="Self.ideas" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="idea" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -125,6 +138,10 @@
             <End Role="account" EntitySet="account" />
             <End Role="comment" EntitySet="comment" />
           </AssociationSet>
+          <AssociationSet Name="FK_comment_ideas" Association="Self.FK_comment_ideas">
+            <End Role="ideas" EntitySet="ideas" />
+            <End Role="comment" EntitySet="comment" />
+          </AssociationSet>
           <AssociationSet Name="FK_ideas_account" Association="Self.FK_ideas_account">
             <End Role="account" EntitySet="account" />
             <End Role="ideas" EntitySet="ideas" />
@@ -142,7 +159,8 @@
             <End Role="reaction" EntitySet="reaction" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="blog_wedModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -170,6 +188,7 @@
           <Property Name="idea" Type="Int32" Nullable="false" />
           <Property Name="time" Type="DateTime" Precision="3" />
           <NavigationProperty Name="account" Relationship="Self.FK_comment_account" FromRole="comment" ToRole="account" />
+          <NavigationProperty Name="idea1" Relationship="Self.FK_comment_ideas" FromRole="comment" ToRole="ideas" />
         </EntityType>
         <EntityType Name="idea">
           <Key>
@@ -180,13 +199,15 @@
           <Property Name="thumb_up" Type="Int32" />
           <Property Name="thumb_down" Type="Int32" />
           <Property Name="views" Type="Int32" />
-          <Property Name="ideas_date" Type="DateTime" Precision="3" />
-          <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ideas_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Content" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="id_toppic" Type="Int32" />
+          <Property Name="file" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="img" Type="Binary" MaxLength="Max" FixedLength="false" />
           <NavigationProperty Name="account" Relationship="Self.FK_ideas_account" FromRole="ideas" ToRole="account" />
+          <NavigationProperty Name="comments" Relationship="Self.FK_comment_ideas" FromRole="ideas" ToRole="comment" />
           <NavigationProperty Name="topic" Relationship="Self.FK_ideas_topic" FromRole="ideas" ToRole="topic" />
           <NavigationProperty Name="reactions" Relationship="Self.FK_reaction_ideas" FromRole="ideas" ToRole="reaction" />
-          <Property Name="file" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="reaction">
           <Key>
@@ -242,6 +263,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_comment_ideas">
+          <End Role="ideas" Type="Self.idea" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ideas">
+              <PropertyRef Name="id_ideas" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="idea" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_ideas_topic">
           <End Role="topic" Type="Self.topic" Multiplicity="0..1" />
           <End Role="ideas" Type="Self.idea" Multiplicity="*" />
@@ -266,7 +299,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="blog_wedEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="blog_wed_Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="accounts" EntityType="Self.account" />
           <EntitySet Name="comments" EntityType="Self.comment" />
           <EntitySet Name="ideas" EntityType="Self.idea" />
@@ -284,6 +317,10 @@
             <End Role="account" EntitySet="accounts" />
             <End Role="reaction" EntitySet="reactions" />
           </AssociationSet>
+          <AssociationSet Name="FK_comment_ideas" Association="Self.FK_comment_ideas">
+            <End Role="ideas" EntitySet="ideas" />
+            <End Role="comment" EntitySet="comments" />
+          </AssociationSet>
           <AssociationSet Name="FK_ideas_topic" Association="Self.FK_ideas_topic">
             <End Role="topic" EntitySet="topics" />
             <End Role="ideas" EntitySet="ideas" />
@@ -298,7 +335,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="blog_wedModelStoreContainer" CdmEntityContainer="blog_wedEntities1">
+        <EntityContainerMapping StorageEntityContainer="blog_wedModelStoreContainer" CdmEntityContainer="blog_wed_Entities">
           <EntitySetMapping Name="accounts">
             <EntityTypeMapping TypeName="blog_wedModel.account">
               <MappingFragment StoreEntitySet="account">
@@ -325,7 +362,6 @@
           <EntitySetMapping Name="ideas">
             <EntityTypeMapping TypeName="blog_wedModel.idea">
               <MappingFragment StoreEntitySet="ideas">
-                <ScalarProperty Name="file" ColumnName="file" />
                 <ScalarProperty Name="id_ideas" ColumnName="id_ideas" />
                 <ScalarProperty Name="id_account" ColumnName="id_account" />
                 <ScalarProperty Name="thumb_up" ColumnName="thumb_up" />
@@ -334,6 +370,8 @@
                 <ScalarProperty Name="ideas_date" ColumnName="ideas_date" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
                 <ScalarProperty Name="id_toppic" ColumnName="id_toppic" />
+                <ScalarProperty Name="file" ColumnName="file" />
+                <ScalarProperty Name="img" ColumnName="img" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

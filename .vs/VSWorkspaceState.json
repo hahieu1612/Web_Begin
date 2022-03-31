@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Views\\Home",
+    "\\Views\\Shared"
   ],
   "SelectedNode": "\\ASM.sln",
   "PreviewInSolutionExplorer": false
