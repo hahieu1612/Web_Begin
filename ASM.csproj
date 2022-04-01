@@ -129,8 +129,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\accountsController.cs" />
+    <Compile Include="Controllers\commentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ideasController.cs" />
+    <Compile Include="Controllers\reactionsController.cs" />
+    <Compile Include="Controllers\topicsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -231,6 +235,26 @@
     <Content Include="Views\ideas\Details.cshtml" />
     <Content Include="Views\ideas\Edit.cshtml" />
     <Content Include="Views\ideas\Index.cshtml" />
+    <Content Include="Views\comments\Create.cshtml" />
+    <Content Include="Views\comments\Delete.cshtml" />
+    <Content Include="Views\comments\Details.cshtml" />
+    <Content Include="Views\comments\Edit.cshtml" />
+    <Content Include="Views\comments\Index.cshtml" />
+    <Content Include="Views\topics\Create.cshtml" />
+    <Content Include="Views\topics\Delete.cshtml" />
+    <Content Include="Views\topics\Details.cshtml" />
+    <Content Include="Views\topics\Edit.cshtml" />
+    <Content Include="Views\topics\Index.cshtml" />
+    <Content Include="Views\accounts\Create.cshtml" />
+    <Content Include="Views\accounts\Delete.cshtml" />
+    <Content Include="Views\accounts\Details.cshtml" />
+    <Content Include="Views\accounts\Edit.cshtml" />
+    <Content Include="Views\accounts\Index.cshtml" />
+    <Content Include="Views\reactions\Create.cshtml" />
+    <Content Include="Views\reactions\Delete.cshtml" />
+    <Content Include="Views\reactions\Details.cshtml" />
+    <Content Include="Views\reactions\Edit.cshtml" />
+    <Content Include="Views\reactions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

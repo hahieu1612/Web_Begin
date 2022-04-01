@@ -10,118 +10,116 @@ using ASM.Model;
 
 namespace ASM.Controllers
 {
-    public class ideasController : Controller
+    public class commentsController : Controller
     {
         private blog_wed_Entities db = new blog_wed_Entities();
 
-        // GET: ideas
+        // GET: comments
         public ActionResult Index()
         {
-            var ideas = db.ideas.Include(i => i.account).Include(i => i.topic);
-            return View(ideas.ToList());
+            var comments = db.comments.Include(c => c.account).Include(c => c.idea1);
+            return View(comments.ToList());
         }
 
-        // GET: ideas/Details/5
+        // GET: comments/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            comment comment = db.comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            return View(idea);
+            return View(comment);
         }
 
-        // GET: ideas/Create
+        // GET: comments/Create
         public ActionResult Create()
         {
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic");
+            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content");
             return View();
         }
 
-        // POST: ideas/Create
+        // POST: comments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
+        public ActionResult Create([Bind(Include = "id_comment,content_cmt,id_account,idea,time")] comment comment)
         {
             if (ModelState.IsValid)
             {
-                db.ideas.Add(idea);
+                db.comments.Add(comment);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
+            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            return View(comment);
         }
 
-        // GET: ideas/Edit/5
+        // GET: comments/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            comment comment = db.comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
+            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            return View(comment);
         }
 
-        // POST: ideas/Edit/5
+        // POST: comments/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
+        public ActionResult Edit([Bind(Include = "id_comment,content_cmt,id_account,idea,time")] comment comment)
         {
-           
             if (ModelState.IsValid)
             {
-                
-                db.Entry(idea).State = EntityState.Modified;
+                db.Entry(comment).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
+            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            return View(comment);
         }
 
-        // GET: ideas/Delete/5
+        // GET: comments/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            comment comment = db.comments.Find(id);
+            if (comment == null)
             {
                 return HttpNotFound();
             }
-            return View(idea);
+            return View(comment);
         }
 
-        // POST: ideas/Delete/5
+        // POST: comments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            idea idea = db.ideas.Find(id);
-            db.ideas.Remove(idea);
+            comment comment = db.comments.Find(id);
+            db.comments.Remove(comment);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ASM.Model.comment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.content_cmt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.account.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idea1.Content)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.content_cmt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.account.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idea1.Content)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id_comment }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id_comment }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id_comment })
+        </td>
+    </tr>
+}
+
+</table>

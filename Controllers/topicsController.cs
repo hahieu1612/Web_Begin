@@ -10,118 +10,107 @@ using ASM.Model;
 
 namespace ASM.Controllers
 {
-    public class ideasController : Controller
+    public class topicsController : Controller
     {
         private blog_wed_Entities db = new blog_wed_Entities();
 
-        // GET: ideas
+        // GET: topics
         public ActionResult Index()
         {
-            var ideas = db.ideas.Include(i => i.account).Include(i => i.topic);
-            return View(ideas.ToList());
+            return View(db.topics.ToList());
         }
 
-        // GET: ideas/Details/5
+        // GET: topics/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            topic topic = db.topics.Find(id);
+            if (topic == null)
             {
                 return HttpNotFound();
             }
-            return View(idea);
+            return View(topic);
         }
 
-        // GET: ideas/Create
+        // GET: topics/Create
         public ActionResult Create()
         {
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic");
             return View();
         }
 
-        // POST: ideas/Create
+        // POST: topics/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
+        public ActionResult Create([Bind(Include = "id_toppic,name_topic")] topic topic)
         {
             if (ModelState.IsValid)
             {
-                db.ideas.Add(idea);
+                db.topics.Add(topic);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            return View(topic);
         }
 
-        // GET: ideas/Edit/5
+        // GET: topics/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            topic topic = db.topics.Find(id);
+            if (topic == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            return View(topic);
         }
 
-        // POST: ideas/Edit/5
+        // POST: topics/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
+        public ActionResult Edit([Bind(Include = "id_toppic,name_topic")] topic topic)
         {
-           
             if (ModelState.IsValid)
             {
-                
-                db.Entry(idea).State = EntityState.Modified;
+                db.Entry(topic).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
-            ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
-            return View(idea);
+            return View(topic);
         }
 
-        // GET: ideas/Delete/5
+        // GET: topics/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            idea idea = db.ideas.Find(id);
-            if (idea == null)
+            topic topic = db.topics.Find(id);
+            if (topic == null)
             {
                 return HttpNotFound();
             }
-            return View(idea);
+            return View(topic);
         }
 
-        // POST: ideas/Delete/5
+        // POST: topics/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            idea idea = db.ideas.Find(id);
-            db.ideas.Remove(idea);
+            topic topic = db.topics.Find(id);
+            db.topics.Remove(topic);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
