@@ -133,6 +133,7 @@
     <Compile Include="Controllers\commentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ideasController.cs" />
+    <Compile Include="Controllers\loginController.cs" />
     <Compile Include="Controllers\reactionsController.cs" />
     <Compile Include="Controllers\topicsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -255,6 +256,7 @@
     <Content Include="Views\reactions\Details.cshtml" />
     <Content Include="Views\reactions\Edit.cshtml" />
     <Content Include="Views\reactions\Index.cshtml" />
+    <Content Include="Views\login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
