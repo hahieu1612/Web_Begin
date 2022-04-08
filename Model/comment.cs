@@ -16,11 +16,11 @@ namespace ASM.Model
     {
         public int id_comment { get; set; }
         public string content_cmt { get; set; }
-        public int id_account { get; set; }
-        public int idea { get; set; }
-        public Nullable<System.DateTime> time { get; set; }
+        public Nullable<int> id_account { get; set; }
+        public Nullable<int> id_ideas { get; set; }
+        public System.DateTime time { get; set; }
     
         public virtual account account { get; set; }
-        public virtual idea idea1 { get; set; }
+        public virtual idea idea { get; set; }
     }
 }

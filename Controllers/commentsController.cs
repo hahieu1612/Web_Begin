@@ -12,12 +12,12 @@ namespace ASM.Controllers
 {
     public class commentsController : Controller
     {
-        private blog_wed_Entities db = new blog_wed_Entities();
+        private blog_wedEntities db = new blog_wedEntities();
 
         // GET: comments
         public ActionResult Index()
         {
-            var comments = db.comments.Include(c => c.account).Include(c => c.idea1);
+            var comments = db.comments.Include(c => c.account).Include(c => c.idea);
             return View(comments.ToList());
         }
 
@@ -40,7 +40,7 @@ namespace ASM.Controllers
         public ActionResult Create()
         {
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
-            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content");
+            ViewBag.ideas = new SelectList(db.ideas, "id_ideas", "Content");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace ASM.Controllers
             }
 
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
-            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            ViewBag.ideas = new SelectList(db.ideas, "id_ideas", "Content", comment.id_ideas);
             return View(comment);
         }
 
@@ -76,7 +76,7 @@ namespace ASM.Controllers
                 return HttpNotFound();
             }
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
-            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            ViewBag.ideas = new SelectList(db.ideas, "id_ideas", "Content", comment.id_ideas);
             return View(comment);
         }
 
@@ -94,7 +94,7 @@ namespace ASM.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", comment.id_account);
-            ViewBag.idea = new SelectList(db.ideas, "id_ideas", "Content", comment.idea);
+            ViewBag.ideas = new SelectList(db.ideas, "id_ideas", "Content", comment.id_ideas);
             return View(comment);
         }
 

@@ -231,16 +231,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Layoutdemo.cshtml" />
-    <Content Include="Views\ideas\Create.cshtml" />
-    <Content Include="Views\ideas\Delete.cshtml" />
-    <Content Include="Views\ideas\Details.cshtml" />
-    <Content Include="Views\ideas\Edit.cshtml" />
-    <Content Include="Views\ideas\Index.cshtml" />
-    <Content Include="Views\comments\Create.cshtml" />
-    <Content Include="Views\comments\Delete.cshtml" />
-    <Content Include="Views\comments\Details.cshtml" />
-    <Content Include="Views\comments\Edit.cshtml" />
-    <Content Include="Views\comments\Index.cshtml" />
     <Content Include="Views\topics\Create.cshtml" />
     <Content Include="Views\topics\Delete.cshtml" />
     <Content Include="Views\topics\Details.cshtml" />
@@ -257,6 +247,16 @@
     <Content Include="Views\reactions\Edit.cshtml" />
     <Content Include="Views\reactions\Index.cshtml" />
     <Content Include="Views\login\Index.cshtml" />
+    <Content Include="Views\ideas\Create.cshtml" />
+    <Content Include="Views\ideas\Delete.cshtml" />
+    <Content Include="Views\ideas\Details.cshtml" />
+    <Content Include="Views\ideas\Edit.cshtml" />
+    <Content Include="Views\ideas\Index.cshtml" />
+    <Content Include="Views\comments\Create.cshtml" />
+    <Content Include="Views\comments\Delete.cshtml" />
+    <Content Include="Views\comments\Details.cshtml" />
+    <Content Include="Views\comments\Edit.cshtml" />
+    <Content Include="Views\comments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

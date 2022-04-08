@@ -12,12 +12,12 @@ namespace ASM.Controllers
 {
     public class ideasController : Controller
     {
-        private blog_wed_Entities db = new blog_wed_Entities();
+        private blog_wedEntities db = new blog_wedEntities();
 
         // GET: ideas
         public ActionResult Index()
         {
-            var ideas = db.ideas.Include(i => i.account).Include(i => i.topic);
+            var ideas = db.ideas.Include(i => i.topic).Include(i => i.account);
             return View(ideas.ToList());
         }
 
@@ -39,8 +39,8 @@ namespace ASM.Controllers
         // GET: ideas/Create
         public ActionResult Create()
         {
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
             ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic");
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name");
             return View();
         }
 
@@ -58,8 +58,8 @@ namespace ASM.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             return View(idea);
         }
 
@@ -75,8 +75,8 @@ namespace ASM.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             return View(idea);
         }
 
@@ -87,16 +87,14 @@ namespace ASM.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
         {
-           
             if (ModelState.IsValid)
             {
-                
                 db.Entry(idea).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             ViewBag.id_toppic = new SelectList(db.topics, "id_toppic", "name_topic", idea.id_toppic);
+            ViewBag.id_account = new SelectList(db.accounts, "id_account", "name", idea.id_account);
             return View(idea);
         }
 

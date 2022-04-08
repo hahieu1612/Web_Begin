@@ -12,7 +12,7 @@ namespace ASM.Controllers
 {
     public class topicsController : Controller
     {
-        private blog_wed_Entities db = new blog_wed_Entities();
+        private blog_wedEntities db = new blog_wedEntities();
 
         // GET: topics
         public ActionResult Index()

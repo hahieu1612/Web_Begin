@@ -20,11 +20,11 @@
           <Key>
             <PropertyRef Name="id_comment" />
           </Key>
-          <Property Name="id_comment" Type="int" Nullable="false" />
-          <Property Name="content_cmt" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="id_account" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="idea" Type="int" Nullable="false" />
-          <Property Name="time" Type="datetime" />
+          <Property Name="id_comment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="content_cmt" Type="nvarchar(max)" />
+          <Property Name="id_account" Type="int" />
+          <Property Name="id_ideas" Type="int" />
+          <Property Name="time" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="ideas">
           <Key>
@@ -39,7 +39,7 @@
           <Property Name="Content" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="id_toppic" Type="int" />
           <Property Name="file" Type="varbinary(max)" />
-          <Property Name="img" Type="image" />
+          <Property Name="img" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="reaction">
           <Key>
@@ -57,7 +57,7 @@
           <Property Name="name_topic" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <Association Name="FK_comment_account">
-          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
           <End Role="comment" Type="Self.comment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="account">
@@ -69,14 +69,14 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_comment_ideas">
-          <End Role="ideas" Type="Self.ideas" Multiplicity="1" />
+          <End Role="ideas" Type="Self.ideas" Multiplicity="0..1" />
           <End Role="comment" Type="Self.comment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ideas">
               <PropertyRef Name="id_ideas" />
             </Principal>
             <Dependent Role="comment">
-              <PropertyRef Name="idea" />
+              <PropertyRef Name="id_ideas" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -181,13 +181,13 @@
           <Key>
             <PropertyRef Name="id_comment" />
           </Key>
-          <Property Name="id_comment" Type="Int32" Nullable="false" />
-          <Property Name="content_cmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="id_account" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="idea" Type="Int32" Nullable="false" />
-          <Property Name="time" Type="DateTime" Precision="3" />
+          <Property Name="id_comment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="content_cmt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="id_account" Type="Int32" />
+          <Property Name="id_ideas" Type="Int32" />
+          <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="account" Relationship="Self.FK_comment_account" FromRole="comment" ToRole="account" />
-          <NavigationProperty Name="idea1" Relationship="Self.FK_comment_ideas" FromRole="comment" ToRole="ideas" />
+          <NavigationProperty Name="idea" Relationship="Self.FK_comment_ideas" FromRole="comment" ToRole="ideas" />
         </EntityType>
         <EntityType Name="idea">
           <Key>
@@ -227,7 +227,7 @@
           <NavigationProperty Name="ideas" Relationship="Self.FK_ideas_topic" FromRole="topic" ToRole="ideas" />
         </EntityType>
         <Association Name="FK_comment_account">
-          <End Role="account" Type="Self.account" Multiplicity="1" />
+          <End Role="account" Type="Self.account" Multiplicity="0..1" />
           <End Role="comment" Type="Self.comment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="account">
@@ -263,14 +263,14 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_comment_ideas">
-          <End Role="ideas" Type="Self.idea" Multiplicity="1" />
+          <End Role="ideas" Type="Self.idea" Multiplicity="0..1" />
           <End Role="comment" Type="Self.comment" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ideas">
               <PropertyRef Name="id_ideas" />
             </Principal>
             <Dependent Role="comment">
-              <PropertyRef Name="idea" />
+              <PropertyRef Name="id_ideas" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -298,7 +298,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="blog_wed_Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="blog_wedEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="accounts" EntityType="Self.account" />
           <EntitySet Name="comments" EntityType="Self.comment" />
           <EntitySet Name="ideas" EntityType="Self.idea" />
@@ -334,7 +334,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="blog_wedModelStoreContainer" CdmEntityContainer="blog_wed_Entities">
+        <EntityContainerMapping StorageEntityContainer="blog_wedModelStoreContainer" CdmEntityContainer="blog_wedEntities">
           <EntitySetMapping Name="accounts">
             <EntityTypeMapping TypeName="blog_wedModel.account">
               <MappingFragment StoreEntitySet="account">
@@ -353,7 +353,7 @@
                 <ScalarProperty Name="id_comment" ColumnName="id_comment" />
                 <ScalarProperty Name="content_cmt" ColumnName="content_cmt" />
                 <ScalarProperty Name="id_account" ColumnName="id_account" />
-                <ScalarProperty Name="idea" ColumnName="idea" />
+                <ScalarProperty Name="id_ideas" ColumnName="id_ideas" />
                 <ScalarProperty Name="time" ColumnName="time" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -1,4 +1,6 @@
-﻿@model IEnumerable<ASM.Model.idea>
+﻿
+
+@model IEnumerable<ASM.Model.idea>
 
 @{
     ViewBag.Title = "Index";
@@ -12,6 +14,9 @@
 </p>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.account.name)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.thumb_up)
         </th>
@@ -34,48 +39,51 @@
             @Html.DisplayNameFor(model => model.img)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.account.name)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.topic.name_topic)
         </th>
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.thumb_up)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.thumb_down)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.views)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ideas_date )
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.file)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.img)
-        <td>
-            @Html.DisplayFor(modelItem => item.account.name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.topic.name_topic)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id_ideas }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id_ideas }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id_ideas })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.account.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.thumb_up)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.thumb_down)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.views)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ideas_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.file)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.img)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.topic.name_topic)
+            </td>
+           
+
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id_ideas }) |
+                @Html.ActionLink("Details", "Details", new { id = item.id_ideas }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.id_ideas })
+            </td>
+        </tr>
+    }
 
 </table>

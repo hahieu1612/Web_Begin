@@ -13,10 +13,10 @@ namespace ASM.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class blog_wed_Entities : DbContext
+    public partial class blog_wedEntities : DbContext
     {
-        public blog_wed_Entities()
-            : base("name=blog_wed_Entities")
+        public blog_wedEntities()
+            : base("name=blog_wedEntities")
         {
         }
     
