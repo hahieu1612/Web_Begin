@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -49,10 +50,26 @@ namespace ASM.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_ideas,id_account,thumb_up,thumb_down,views,ideas_date,Content,id_toppic,file,img")] idea idea)
+        public ActionResult Create(idea idea, HttpPostedFileBase postedFile, HttpPostedFileBase postedImg)
         {
             if (ModelState.IsValid)
             {
+                if(postedImg != null)
+                {
+                    byte[] imgBytes;
+                    var supportedTypes = new[] { "png", "jpg", "jpeg"};
+                    var fileExt = System.IO.Path.GetExtension(postedImg.FileName).Substring(1);
+                    if (supportedTypes.Contains(fileExt))
+                    {
+                        using (BinaryReader br = new BinaryReader(postedImg.InputStream))
+                        {
+                            imgBytes = br.ReadBytes(postedImg.ContentLength);
+                        }
+                        idea.img = imgBytes;
+                    }
+
+                     
+                }
                 db.ideas.Add(idea);
                 db.SaveChanges();
                 return RedirectToAction("Index");
